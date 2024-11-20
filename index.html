@@ -256,38 +256,28 @@
 
 
                       <div class=" contactus-form-container" id="Contactme">   
-                        <form action=""> 
-                          <div class=" formfield-container" >
-                          <input class=" formfield"
-                           type=" text"
-                            name="name"
-                            id=""placeholder="Enter your name"/>
-                          
-                         
-                            <input class=" formfield"
-                             type=" email"
-                              name="email"
-                              id=""placeholder="Enter your email address"/>
-                              
-                            <input class=" formfield"
-                            type=" text"
-                             name="subject"
-                             id=""placeholder="Enter your subject"/>
-
-                             <textarea name="message"
-                             id="" cols="30" rows=" 10" 
-                             class="formfield formfield-textarea"
-                             placeholder="Enter your message"></textarea>
-
-                            </div> 
-                            <div>
-                              <button type="submit" class="btn-pink" id="submit-btn">
-                                Send message<i class="submit-icon fa-solid fa-paper-plane" >   <!--homework ahe he  -->
-
-                                </i>
-                              </button> 
-                            </div>
+                        <form action="/send-email" method="POST">
+                          <div class="formfield-container">
+                            <input class="formfield" type="text" name="name" placeholder="Enter your name" required />
+                            <input class="formfield" type="email" name="email" placeholder="Enter your email address" required />
+                            <input class="formfield" type="text" name="subject" placeholder="Enter your subject" required />
+                            <textarea
+                              name="message"
+                              cols="30"
+                              rows="10"
+                              class="formfield formfield-textarea"
+                              placeholder="Enter your message"
+                              required
+                            ></textarea>
+                          </div>
+                          <div>
+                            <button type="submit" class="btn-pink" id="submit-btn">
+                              Send message <i class="submit-icon fa-solid fa-paper-plane"></i>
+                            </button>
+                          </div>
                         </form>
+                        
+
                       </div>
 
             </div>
